@@ -11,3 +11,4 @@ Pillow==12.0.0
 # to execute the notebooks from the command line
 nbconvert==7.16.6
 ipykernel==6.31.0
+
