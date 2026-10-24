@@ -1,0 +1,15 @@
+entry,query,n_src
+0,+Smiling,4786
+1,+Eyeglasses,2196
+2,-Heavy_Makeup,4087
+3,+Male,1595
+4,-Young,5355
+5,+Blond_Hair,5469
+6,+Mustache,301
+7,-Young,5355
+8,"+Eyeglasses, +Smiling",612
+9,"+Black_Hair, -Wavy_Hair",2572
+10,"-Male, -Mustache",27
+11,"+Chubby, -Young",584
+12,"-Smiling, +Eyeglasses, +Wearing_Hat",79
+13,"+Wearing_Lipstick, -Heavy_Makeup, +Smiling",34

@@ -1,0 +1,7 @@
+metric,value
+gate1_reconstruction_cos,0.9722
+gate3_dead_fraction,0.2939
+gate2_permutation_coverage,12/40
+null_p95,0.1680
+overlap_image_directions,0.363
+overlap_text_directions,0.115

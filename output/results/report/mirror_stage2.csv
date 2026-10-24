@@ -1,0 +1,13 @@
+variant,mirror_R@10
+stage 1 (DirectionFusion),0.314
+(0) linear probes,0.428
+"(0) linear probes, GT source profile",0.565
+(a) linear-90 + temperature,0.439
+(b) MLP + temperature,0.528
+"(b) MLP + temperature, GT source profile",0.632
+constraint half only,0.142
+preservation half only,0.421
+"joint predicate, M=100",0.501
+"joint predicate, M=200",0.528
+"joint predicate, M=500",0.556
+coverage ceiling cov@200,0.848

@@ -1,0 +1,258 @@
+{
+ "gram_paired_benchmark": {
+  "Black_Hair|Blond_Hair": -0.3650895357131958,
+  "Black_Hair|Chubby": 0.0950106605887413,
+  "Black_Hair|Eyeglasses": 0.11465674638748169,
+  "Black_Hair|Heavy_Makeup": 0.1191302165389061,
+  "Black_Hair|Male": -0.04869668930768967,
+  "Black_Hair|Mustache": 0.23013107478618622,
+  "Black_Hair|Smiling": 0.012397607788443565,
+  "Black_Hair|Wavy_Hair": -0.06688743829727173,
+  "Black_Hair|Wearing_Hat": -0.02400299347937107,
+  "Black_Hair|Wearing_Lipstick": 0.2107446938753128,
+  "Black_Hair|Young": -0.0173677708953619,
+  "Blond_Hair|Chubby": 0.0162713173776865,
+  "Blond_Hair|Eyeglasses": -0.07022027671337128,
+  "Blond_Hair|Heavy_Makeup": 0.05771154165267944,
+  "Blond_Hair|Male": 0.07515295594930649,
+  "Blond_Hair|Mustache": 0.03555741161108017,
+  "Blond_Hair|Smiling": -0.004353856667876244,
+  "Blond_Hair|Wavy_Hair": 0.058155495673418045,
+  "Blond_Hair|Wearing_Hat": 0.00015354936476796865,
+  "Blond_Hair|Wearing_Lipstick": -0.025516068562865257,
+  "Blond_Hair|Young": -0.06698748469352722,
+  "Chubby|Eyeglasses": 0.039547741413116455,
+  "Chubby|Heavy_Makeup": -0.019265679642558098,
+  "Chubby|Male": -0.09167610108852386,
+  "Chubby|Mustache": 0.0695299580693245,
+  "Chubby|Smiling": -0.013948554173111916,
+  "Chubby|Wavy_Hair": -0.08129086345434189,
+  "Chubby|Wearing_Hat": 0.10793918371200562,
+  "Chubby|Wearing_Lipstick": -0.16056019067764282,
+  "Chubby|Young": -0.17515936493873596,
+  "Eyeglasses|Heavy_Makeup": 0.08743271976709366,
+  "Eyeglasses|Male": -0.13168510794639587,
+  "Eyeglasses|Mustache": 0.06140275299549103,
+  "Eyeglasses|Smiling": 0.12013379484415054,
+  "Eyeglasses|Wavy_Hair": -0.027587328106164932,
+  "Eyeglasses|Wearing_Hat": 0.12486224621534348,
+  "Eyeglasses|Wearing_Lipstick": -0.008811628445982933,
+  "Eyeglasses|Young": -0.046271078288555145,
+  "Heavy_Makeup|Male": 0.08843949437141418,
+  "Heavy_Makeup|Mustache": 0.06212916597723961,
+  "Heavy_Makeup|Smiling": -0.10072880983352661,
+  "Heavy_Makeup|Wavy_Hair": 0.33775994181632996,
+  "Heavy_Makeup|Wearing_Hat": -0.041912347078323364,
+  "Heavy_Makeup|Wearing_Lipstick": 0.4910728633403778,
+  "Heavy_Makeup|Young": 0.2064758837223053,
+  "Male|Mustache": -0.00957668386399746,
+  "Male|Smiling": 0.10620687901973724,
+  "Male|Wavy_Hair": 0.08462522178888321,
+  "Male|Wearing_Hat": -0.0830879956483841,
+  "Male|Wearing_Lipstick": -0.027673382312059402,
+  "Male|Young": 0.02937455102801323,
+  "Mustache|Smiling": 0.055714353919029236,
+  "Mustache|Wavy_Hair": 0.11472278088331223,
+  "Mustache|Wearing_Hat": -0.07258087396621704,
+  "Mustache|Wearing_Lipstick": 0.26518315076828003,
+  "Mustache|Young": -0.16978855431079865,
+  "Smiling|Wavy_Hair": 0.054620884358882904,
+  "Smiling|Wearing_Hat": -0.0319061353802681,
+  "Smiling|Wearing_Lipstick": 0.11919447034597397,
+  "Smiling|Young": -0.21628925204277039,
+  "Wavy_Hair|Wearing_Hat": -0.07684309035539627,
+  "Wavy_Hair|Wearing_Lipstick": 0.3970072269439697,
+  "Wavy_Hair|Young": -0.12538249790668488,
+  "Wearing_Hat|Wearing_Lipstick": -0.17001017928123474,
+  "Wearing_Hat|Young": 0.08221345394849777,
+  "Wearing_Lipstick|Young": -0.08655045926570892
+ },
+ "predicted": {
+  "lipstick_makeup": 0.4910728633403778,
+  "male_mustache": 0.009576660580933094
+ },
+ "cooccurring": [
+  {
+   "query": "+Eyeglasses, +Smiling",
+   "pair": [
+    "Eyeglasses",
+    "Smiling"
+   ],
+   "cos_paired": 0.12013381719589233,
+   "cos_b5": -0.18052998185157776,
+   "cos_text": 0.18253427743911743,
+   "signed_cross": 0.06757527217268944
+  },
+  {
+   "query": "+Black_Hair, -Wavy_Hair",
+   "pair": [
+    "Black_Hair",
+    "Wavy_Hair"
+   ],
+   "cos_paired": -0.06688743084669113,
+   "cos_b5": -0.32738998532295227,
+   "cos_text": 0.4162660241127014,
+   "signed_cross": 0.025082786567509174
+  },
+  {
+   "query": "-Male, -Mustache",
+   "pair": [
+    "Male",
+    "Mustache"
+   ],
+   "cos_paired": -0.009576660580933094,
+   "cos_b5": 0.824240505695343,
+   "cos_text": 0.16215303540229797,
+   "signed_cross": -0.0023941651452332735
+  },
+  {
+   "query": "+Chubby, -Young",
+   "pair": [
+    "Chubby",
+    "Young"
+   ],
+   "cos_paired": -0.17515935003757477,
+   "cos_b5": -0.8519407510757446,
+   "cos_text": -0.02171451598405838,
+   "signed_cross": 0.06568475626409054
+  },
+  {
+   "query": "-Smiling, +Eyeglasses, +Wearing_Hat",
+   "pair": [
+    "Smiling",
+    "Eyeglasses"
+   ],
+   "cos_paired": 0.12013381719589233,
+   "cos_b5": -0.18052998185157776,
+   "cos_text": 0.18253427743911743,
+   "signed_cross": -0.045050181448459625
+  },
+  {
+   "query": "-Smiling, +Eyeglasses, +Wearing_Hat",
+   "pair": [
+    "Smiling",
+    "Wearing_Hat"
+   ],
+   "cos_paired": -0.03190615028142929,
+   "cos_b5": -0.3475917875766754,
+   "cos_text": 0.192966490983963,
+   "signed_cross": 0.011964806355535984
+  },
+  {
+   "query": "-Smiling, +Eyeglasses, +Wearing_Hat",
+   "pair": [
+    "Eyeglasses",
+    "Wearing_Hat"
+   ],
+   "cos_paired": 0.12486222386360168,
+   "cos_b5": 0.5105787515640259,
+   "cos_text": 0.1706400364637375,
+   "signed_cross": 0.07023500092327595
+  },
+  {
+   "query": "+Wearing_Lipstick, -Heavy_Makeup, +Smiling",
+   "pair": [
+    "Wearing_Lipstick",
+    "Heavy_Makeup"
+   ],
+   "cos_paired": 0.4910728633403778,
+   "cos_b5": 0.9930194616317749,
+   "cos_text": 0.5316253304481506,
+   "signed_cross": -0.18415232375264168
+  },
+  {
+   "query": "+Wearing_Lipstick, -Heavy_Makeup, +Smiling",
+   "pair": [
+    "Wearing_Lipstick",
+    "Smiling"
+   ],
+   "cos_paired": 0.11919446289539337,
+   "cos_b5": 0.3306888937950134,
+   "cos_text": 0.19764907658100128,
+   "signed_cross": 0.06704688537865877
+  },
+  {
+   "query": "+Wearing_Lipstick, -Heavy_Makeup, +Smiling",
+   "pair": [
+    "Heavy_Makeup",
+    "Smiling"
+   ],
+   "cos_paired": -0.10072878003120422,
+   "cos_b5": 0.3448243737220764,
+   "cos_text": 0.23434683680534363,
+   "signed_cross": 0.037773292511701584
+  }
+ ],
+ "cancellation": [
+  {
+   "query": "+Eyeglasses, +Smiling",
+   "paired": 1.058363676071167,
+   "b5_sonde": 0.9052459001541138,
+   "text": 1.0874440670013428
+  },
+  {
+   "query": "+Black_Hair, -Wavy_Hair",
+   "paired": 1.0304088592529297,
+   "b5_sonde": 1.14114248752594,
+   "text": 0.784700334072113
+  },
+  {
+   "query": "-Male, -Mustache",
+   "paired": 0.9952001571655273,
+   "b5_sonde": 1.3506447076797485,
+   "text": 1.07803213596344
+  },
+  {
+   "query": "+Chubby, -Young",
+   "paired": 1.0778151750564575,
+   "b5_sonde": 1.336565375328064,
+   "text": 1.0099724531173706
+  },
+  {
+   "query": "-Smiling, +Eyeglasses, +Wearing_Hat",
+   "paired": 1.0266624689102173,
+   "b5_sonde": 1.3060675859451294,
+   "text": 0.9668485522270203
+  },
+  {
+   "query": "+Wearing_Lipstick, -Heavy_Makeup, +Smiling",
+   "paired": 0.9405359625816345,
+   "b5_sonde": 0.7354120016098022,
+   "text": 0.8625020980834961
+  }
+ ],
+ "solve_conditioning": [
+  {
+   "query": "+Eyeglasses, +Smiling",
+   "kappa_b5": 1.4406018257141113,
+   "kappa_paired": 1.2730728387832642
+  },
+  {
+   "query": "+Black_Hair, -Wavy_Hair",
+   "kappa_b5": 1.9734910726547241,
+   "kappa_paired": 1.1433640718460083
+  },
+  {
+   "query": "-Male, -Mustache",
+   "kappa_b5": 10.379185676574707,
+   "kappa_paired": 1.019338607788086
+  },
+  {
+   "query": "+Chubby, -Young",
+   "kappa_b5": 12.508111953735352,
+   "kappa_paired": 1.424710750579834
+  },
+  {
+   "query": "-Smiling, +Eyeglasses, +Wearing_Hat",
+   "kappa_b5": 3.7538936138153076,
+   "kappa_paired": 1.4296188354492188
+  },
+  {
+   "query": "+Wearing_Lipstick, -Heavy_Makeup, +Smiling",
+   "kappa_b5": 318.2694091796875,
+   "kappa_paired": 3.215613842010498
+  }
+ ],
+ "coocc_max_abs_cos": 0.4910728633403778,
+ "verdict": "TESI VIVA: interferenza presente sulle coppie co-occorrenti"
+}

@@ -1,0 +1,64 @@
+query: 13, attributi benchmark: 12, query multi-condizione: 6
+
+Gram |cos| direzioni appaiate (12 attributi benchmark):
+                     Black_H Blond_H  Chubby Eyeglas Heavy_M    Male Mustach Smiling Wavy_Ha Wearing Wearing   Young
+  Black_Hair            1.00    0.37    0.10    0.11    0.12    0.05    0.23    0.01    0.07    0.02    0.21    0.02
+  Blond_Hair            0.37    1.00    0.02    0.07    0.06    0.08    0.04    0.00    0.06    0.00    0.03    0.07
+  Chubby                0.10    0.02    1.00    0.04    0.02    0.09    0.07    0.01    0.08    0.11    0.16    0.18
+  Eyeglasses            0.11    0.07    0.04    1.00    0.09    0.13    0.06    0.12    0.03    0.12    0.01    0.05
+  Heavy_Makeup          0.12    0.06    0.02    0.09    1.00    0.09    0.06    0.10    0.34    0.04    0.49    0.21
+  Male                  0.05    0.08    0.09    0.13    0.09    1.00    0.01    0.11    0.08    0.08    0.03    0.03
+  Mustache              0.23    0.04    0.07    0.06    0.06    0.01    1.00    0.06    0.11    0.07    0.27    0.17
+  Smiling               0.01    0.00    0.01    0.12    0.10    0.11    0.06    1.00    0.05    0.03    0.12    0.22
+  Wavy_Hair             0.07    0.06    0.08    0.03    0.34    0.08    0.11    0.05    1.00    0.08    0.40    0.13
+  Wearing_Hat           0.02    0.00    0.11    0.12    0.04    0.08    0.07    0.03    0.08    1.00    0.17    0.08
+  Wearing_Lipstick      0.21    0.03    0.16    0.01    0.49    0.03    0.27    0.12    0.40    0.17    1.00    0.09
+  Young                 0.02    0.07    0.18    0.05    0.21    0.03    0.17    0.22    0.13    0.08    0.09    1.00
+
+top-8 coppie piu' allineate (qualunque, non solo co-occorrenti):
+  |cos|(Heavy_Makeup, Wearing_Lipstick) = 0.491
+  |cos|(Wavy_Hair, Wearing_Lipstick) = 0.397
+  |cos|(Black_Hair, Blond_Hair) = 0.365
+  |cos|(Heavy_Makeup, Wavy_Hair) = 0.338
+  |cos|(Mustache, Wearing_Lipstick) = 0.265
+  |cos|(Black_Hair, Mustache) = 0.230
+  |cos|(Smiling, Young) = 0.216
+  |cos|(Black_Hair, Wearing_Lipstick) = 0.211
+
+predizioni dichiarate (appaiate):
+  |cos|(Wearing_Lipstick, Heavy_Makeup) = 0.491   [predetto >= 0.6]
+  |cos|(Male, Mustache)                 = 0.010   [predetto alto]
+
+coppie co-occorrenti nel benchmark — |cos| per set e cross-term firmato dell'edit B3-paired (g = +0.75 / -0.5):
+query                                          coppia                        paired     b5   text g_i*g_j*cos
++Eyeglasses, +Smiling                          Eyeglasses, Smiling            0.120  0.181  0.183      +0.068
++Black_Hair, -Wavy_Hair                        Black_Hair, Wavy_Hair          0.067  0.327  0.416      +0.025
+-Male, -Mustache                               Male, Mustache                 0.010  0.824  0.162      -0.002
++Chubby, -Young                                Chubby, Young                  0.175  0.852  0.022      +0.066
+-Smiling, +Eyeglasses, +Wearing_Hat            Smiling, Eyeglasses            0.120  0.181  0.183      -0.045
+-Smiling, +Eyeglasses, +Wearing_Hat            Smiling, Wearing_Hat           0.032  0.348  0.193      +0.012
+-Smiling, +Eyeglasses, +Wearing_Hat            Eyeglasses, Wearing_Hat        0.125  0.511  0.171      +0.070
++Wearing_Lipstick, -Heavy_Makeup, +Smiling     Wearing_Lips, Heavy_Makeup     0.491  0.993  0.532      -0.184
++Wearing_Lipstick, -Heavy_Makeup, +Smiling     Wearing_Lips, Smiling          0.119  0.331  0.198      +0.067
++Wearing_Lipstick, -Heavy_Makeup, +Smiling     Heavy_Makeup, Smiling          0.101  0.345  0.234      +0.038
+
+rapporto di cancellazione per query multi-condizione (||sum g_i d_i|| / sqrt(sum g_i^2); 1 = ortogonale):
+  +Eyeglasses, +Smiling                          paired 1.058  b5 0.905  text 1.087
+  +Black_Hair, -Wavy_Hair                        paired 1.030  b5 1.141  text 0.785
+  -Male, -Mustache                               paired 0.995  b5 1.351  text 1.078
+  +Chubby, -Young                                paired 1.078  b5 1.337  text 1.010
+  -Smiling, +Eyeglasses, +Wearing_Hat            paired 1.027  b5 1.306  text 0.967
+  +Wearing_Lipstick, -Heavy_Makeup, +Smiling     paired 0.941  b5 0.735  text 0.863
+
+condizionamento kappa(W W^T) del solve a margini per query (W = direzioni sonda dei k attributi):
+  +Eyeglasses, +Smiling                          b5     1.44   paired     1.27
+  +Black_Hair, -Wavy_Hair                        b5     1.97   paired     1.14
+  -Male, -Mustache                               b5    10.38   paired     1.02
+  +Chubby, -Young                                b5    12.51   paired     1.42
+  -Smiling, +Eyeglasses, +Wearing_Hat            b5     3.75   paired     1.43
+  +Wearing_Lipstick, -Heavy_Makeup, +Smiling     b5   318.27   paired     3.22
+
+max |cos| appaiate sulle coppie co-occorrenti: 0.491   [morte della tesi se TUTTE <= 0.3]
+VERDETTO DIAGNOSI: TESI VIVA: interferenza presente sulle coppie co-occorrenti
+
+salvato gram_diagnostic.json

@@ -1,0 +1,402 @@
+[
+ {
+  "attr": "5_o_Clock_Shadow",
+  "n_pos_train": 18177,
+  "auc_lda": 0.9567229889978094,
+  "auc_qda": 0.9345603419301814,
+  "auc_probe": 0.9605609664268544,
+  "lw_lambda_pos": 0.0025301342830061913,
+  "lw_lambda_neg": 0.00033768630237318575,
+  "bench": false
+ },
+ {
+  "attr": "Arched_Eyebrows",
+  "n_pos_train": 43278,
+  "auc_lda": 0.8935837679557307,
+  "auc_qda": 0.8278291254767268,
+  "auc_probe": 0.8954795568891494,
+  "lw_lambda_pos": 0.0011226095957681537,
+  "lw_lambda_neg": 0.0004137141804676503,
+  "bench": false
+ },
+ {
+  "attr": "Attractive",
+  "n_pos_train": 83603,
+  "auc_lda": 0.8944813218452059,
+  "auc_qda": 0.8524908334333174,
+  "auc_probe": 0.8983135567740426,
+  "lw_lambda_pos": 0.0005431598401628435,
+  "lw_lambda_neg": 0.0006736228242516518,
+  "bench": false
+ },
+ {
+  "attr": "Bags_Under_Eyes",
+  "n_pos_train": 33280,
+  "auc_lda": 0.850486874054023,
+  "auc_qda": 0.7814805764639101,
+  "auc_probe": 0.8448099258820403,
+  "lw_lambda_pos": 0.0014946040464565158,
+  "lw_lambda_neg": 0.0003773018252104521,
+  "bench": false
+ },
+ {
+  "attr": "Bald",
+  "n_pos_train": 3713,
+  "auc_lda": 0.992198755042259,
+  "auc_qda": 0.9849615127577155,
+  "auc_probe": 0.9946966240875912,
+  "lw_lambda_pos": 0.00901475828140974,
+  "lw_lambda_neg": 0.0003054070984944701,
+  "bench": false
+ },
+ {
+  "attr": "Bangs",
+  "n_pos_train": 24685,
+  "auc_lda": 0.9752478797970174,
+  "auc_qda": 0.8967232269987219,
+  "auc_probe": 0.9741402422094632,
+  "lw_lambda_pos": 0.0015889581991359591,
+  "lw_lambda_neg": 0.00034272659104317427,
+  "bench": false
+ },
+ {
+  "attr": "Big_Lips",
+  "n_pos_train": 39213,
+  "auc_lda": 0.8020776613395262,
+  "auc_qda": 0.77385473144949,
+  "auc_probe": 0.8068231356498905,
+  "lw_lambda_pos": 0.001215591561049223,
+  "lw_lambda_neg": 0.00038327754009515047,
+  "bench": false
+ },
+ {
+  "attr": "Big_Nose",
+  "n_pos_train": 38341,
+  "auc_lda": 0.8663376943687113,
+  "auc_qda": 0.8230644680366632,
+  "auc_probe": 0.8693242877677135,
+  "lw_lambda_pos": 0.0013040113262832165,
+  "lw_lambda_neg": 0.00038921809755265713,
+  "bench": false
+ },
+ {
+  "attr": "Black_Hair",
+  "n_pos_train": 38906,
+  "auc_lda": 0.9404937790026514,
+  "auc_qda": 0.9002119095135696,
+  "auc_probe": 0.9418288954994737,
+  "lw_lambda_pos": 0.0010279275011271238,
+  "lw_lambda_neg": 0.0003822921426035464,
+  "bench": true
+ },
+ {
+  "attr": "Blond_Hair",
+  "n_pos_train": 24267,
+  "auc_lda": 0.9750382758608876,
+  "auc_qda": 0.9257786015514026,
+  "auc_probe": 0.9787297241490784,
+  "lw_lambda_pos": 0.0018083002651110291,
+  "lw_lambda_neg": 0.00034441836760379374,
+  "bench": true
+ },
+ {
+  "attr": "Blurry",
+  "n_pos_train": 8362,
+  "auc_lda": 0.9536370422080805,
+  "auc_qda": 0.9042304756573127,
+  "auc_probe": 0.9553378096583851,
+  "lw_lambda_pos": 0.006154241506010294,
+  "lw_lambda_neg": 0.0003118380263913423,
+  "bench": false
+ },
+ {
+  "attr": "Brown_Hair",
+  "n_pos_train": 33192,
+  "auc_lda": 0.8791636065609257,
+  "auc_qda": 0.7729639280626869,
+  "auc_probe": 0.8841525696957393,
+  "lw_lambda_pos": 0.001242155209183693,
+  "lw_lambda_neg": 0.00037551490822806954,
+  "bench": false
+ },
+ {
+  "attr": "Bushy_Eyebrows",
+  "n_pos_train": 23386,
+  "auc_lda": 0.9340019377586675,
+  "auc_qda": 0.8753526411416752,
+  "auc_probe": 0.9353723189631714,
+  "lw_lambda_pos": 0.001839946606196463,
+  "lw_lambda_neg": 0.0003472943790256977,
+  "bench": false
+ },
+ {
+  "attr": "Chubby",
+  "n_pos_train": 9389,
+  "auc_lda": 0.9438024435687095,
+  "auc_qda": 0.9185896269143181,
+  "auc_probe": 0.9546559342098209,
+  "lw_lambda_pos": 0.004720793571323156,
+  "lw_lambda_neg": 0.00031652674078941345,
+  "bench": true
+ },
+ {
+  "attr": "Double_Chin",
+  "n_pos_train": 7571,
+  "auc_lda": 0.9534710663040115,
+  "auc_qda": 0.9273829106880134,
+  "auc_probe": 0.9604282914488292,
+  "lw_lambda_pos": 0.0057269432581961155,
+  "lw_lambda_neg": 0.00031410728115588427,
+  "bench": false
+ },
+ {
+  "attr": "Eyeglasses",
+  "n_pos_train": 10521,
+  "auc_lda": 0.9946748418009956,
+  "auc_qda": 0.9917050849160275,
+  "auc_probe": 0.9966125360926563,
+  "lw_lambda_pos": 0.0039357696659862995,
+  "lw_lambda_neg": 0.00031637668143957853,
+  "bench": true
+ },
+ {
+  "attr": "Goatee",
+  "n_pos_train": 10337,
+  "auc_lda": 0.981824989035703,
+  "auc_qda": 0.9532698992709967,
+  "auc_probe": 0.9820843610969819,
+  "lw_lambda_pos": 0.004166225902736187,
+  "lw_lambda_neg": 0.0003162875073030591,
+  "bench": false
+ },
+ {
+  "attr": "Gray_Hair",
+  "n_pos_train": 6896,
+  "auc_lda": 0.9812268347532049,
+  "auc_qda": 0.9732461712709903,
+  "auc_probe": 0.9857445981954772,
+  "lw_lambda_pos": 0.005949603393673897,
+  "lw_lambda_neg": 0.00031165278051048517,
+  "bench": false
+ },
+ {
+  "attr": "Heavy_Makeup",
+  "n_pos_train": 62555,
+  "auc_lda": 0.9712180398324731,
+  "auc_qda": 0.9505428835495896,
+  "auc_probe": 0.9731236608880253,
+  "lw_lambda_pos": 0.000685398350469768,
+  "lw_lambda_neg": 0.0005210564122535288,
+  "bench": true
+ },
+ {
+  "attr": "High_Cheekbones",
+  "n_pos_train": 73645,
+  "auc_lda": 0.936768758052351,
+  "auc_qda": 0.8395304757559044,
+  "auc_probe": 0.9366079747026005,
+  "lw_lambda_pos": 0.0006058490835130215,
+  "lw_lambda_neg": 0.00054607616038993,
+  "bench": false
+ },
+ {
+  "attr": "Male",
+  "n_pos_train": 68261,
+  "auc_lda": 0.9989660645712013,
+  "auc_qda": 0.9987606184552976,
+  "auc_probe": 0.9994673323680423,
+  "lw_lambda_pos": 0.0007263414445333183,
+  "lw_lambda_neg": 0.0004924849490635097,
+  "bench": true
+ },
+ {
+  "attr": "Mouth_Slightly_Open",
+  "n_pos_train": 78486,
+  "auc_lda": 0.9621760784487311,
+  "auc_qda": 0.8562008791523972,
+  "auc_probe": 0.9588256415667478,
+  "lw_lambda_pos": 0.0005906492588110268,
+  "lw_lambda_neg": 0.0005709829274564981,
+  "bench": false
+ },
+ {
+  "attr": "Mustache",
+  "n_pos_train": 6642,
+  "auc_lda": 0.969978264950695,
+  "auc_qda": 0.9442185529924222,
+  "auc_probe": 0.9727810842282313,
+  "lw_lambda_pos": 0.006393405608832836,
+  "lw_lambda_neg": 0.0003091364342253655,
+  "bench": true
+ },
+ {
+  "attr": "Narrow_Eyes",
+  "n_pos_train": 18869,
+  "auc_lda": 0.8850068027210884,
+  "auc_qda": 0.7834208021010013,
+  "auc_probe": 0.8747210884353741,
+  "lw_lambda_pos": 0.0025227912701666355,
+  "lw_lambda_neg": 0.000335336837451905,
+  "bench": false
+ },
+ {
+  "attr": "No_Beard",
+  "n_pos_train": 135779,
+  "auc_lda": 0.9836967544609915,
+  "auc_qda": 0.962365221019369,
+  "auc_probe": 0.9853495516452682,
+  "lw_lambda_pos": 0.00035597712849266827,
+  "lw_lambda_neg": 0.0017266826471313834,
+  "bench": false
+ },
+ {
+  "attr": "Oval_Face",
+  "n_pos_train": 46101,
+  "auc_lda": 0.7395676350344256,
+  "auc_qda": 0.6913507406587936,
+  "auc_probe": 0.7420979203205201,
+  "lw_lambda_pos": 0.0009437146945856512,
+  "lw_lambda_neg": 0.0004254886880517006,
+  "bench": false
+ },
+ {
+  "attr": "Pale_Skin",
+  "n_pos_train": 7005,
+  "auc_lda": 0.9125182444792169,
+  "auc_qda": 0.8272051792936406,
+  "auc_probe": 0.8971234435351496,
+  "lw_lambda_pos": 0.006565968971699476,
+  "lw_lambda_neg": 0.00030937299015931785,
+  "bench": false
+ },
+ {
+  "attr": "Pointy_Nose",
+  "n_pos_train": 44846,
+  "auc_lda": 0.7799656442688259,
+  "auc_qda": 0.735418798924832,
+  "auc_probe": 0.7810048721814086,
+  "lw_lambda_pos": 0.0010154759511351585,
+  "lw_lambda_neg": 0.00041954158223234117,
+  "bench": false
+ },
+ {
+  "attr": "Receding_Hairline",
+  "n_pos_train": 13040,
+  "auc_lda": 0.9246366940335515,
+  "auc_qda": 0.8953507569597002,
+  "auc_probe": 0.9380565101540153,
+  "lw_lambda_pos": 0.0028044909704476595,
+  "lw_lambda_neg": 0.00032351442496292293,
+  "bench": false
+ },
+ {
+  "attr": "Rosy_Cheeks",
+  "n_pos_train": 10525,
+  "auc_lda": 0.9341316340870194,
+  "auc_qda": 0.9071771476695133,
+  "auc_probe": 0.941529022500776,
+  "lw_lambda_pos": 0.003706795396283269,
+  "lw_lambda_neg": 0.0003213640011381358,
+  "bench": false
+ },
+ {
+  "attr": "Sideburns",
+  "n_pos_train": 9156,
+  "auc_lda": 0.9816172719903518,
+  "auc_qda": 0.9594484272128749,
+  "auc_probe": 0.9827819450760197,
+  "lw_lambda_pos": 0.004926491528749466,
+  "lw_lambda_neg": 0.00031497798045165837,
+  "bench": false
+ },
+ {
+  "attr": "Smiling",
+  "n_pos_train": 78080,
+  "auc_lda": 0.9772112239565288,
+  "auc_qda": 0.8802176401591931,
+  "auc_probe": 0.9778531993202829,
+  "lw_lambda_pos": 0.0005559845012612641,
+  "lw_lambda_neg": 0.000581313215661794,
+  "bench": true
+ },
+ {
+  "attr": "Straight_Hair",
+  "n_pos_train": 33947,
+  "auc_lda": 0.8645646381147541,
+  "auc_qda": 0.795878188544128,
+  "auc_probe": 0.8672386324875945,
+  "lw_lambda_pos": 0.0012398067628964782,
+  "lw_lambda_neg": 0.0003769631730392575,
+  "bench": false
+ },
+ {
+  "attr": "Wavy_Hair",
+  "n_pos_train": 51982,
+  "auc_lda": 0.9137266072159823,
+  "auc_qda": 0.8146294470569734,
+  "auc_probe": 0.9115750801464885,
+  "lw_lambda_pos": 0.0008946878369897604,
+  "lw_lambda_neg": 0.0004428503743838519,
+  "bench": true
+ },
+ {
+  "attr": "Wearing_Earrings",
+  "n_pos_train": 30362,
+  "auc_lda": 0.9336271438153623,
+  "auc_qda": 0.8655614482459504,
+  "auc_probe": 0.9368119182511254,
+  "lw_lambda_pos": 0.0014307093806564808,
+  "lw_lambda_neg": 0.00036453528446145356,
+  "bench": false
+ },
+ {
+  "attr": "Wearing_Hat",
+  "n_pos_train": 8039,
+  "auc_lda": 0.991203773962447,
+  "auc_qda": 0.9816866370118563,
+  "auc_probe": 0.995895484217638,
+  "lw_lambda_pos": 0.005738736130297184,
+  "lw_lambda_neg": 0.00030698164482600987,
+  "bench": true
+ },
+ {
+  "attr": "Wearing_Lipstick",
+  "n_pos_train": 76437,
+  "auc_lda": 0.9785695374234455,
+  "auc_qda": 0.9634146318954427,
+  "auc_probe": 0.9807060907885214,
+  "lw_lambda_pos": 0.0005767258116975427,
+  "lw_lambda_neg": 0.0006138912867754698,
+  "bench": true
+ },
+ {
+  "attr": "Wearing_Necklace",
+  "n_pos_train": 19764,
+  "auc_lda": 0.8253876516954545,
+  "auc_qda": 0.7835988452698481,
+  "auc_probe": 0.8249273372549922,
+  "lw_lambda_pos": 0.0023799105547368526,
+  "lw_lambda_neg": 0.00033649004762992263,
+  "bench": false
+ },
+ {
+  "attr": "Wearing_Necktie",
+  "n_pos_train": 11890,
+  "auc_lda": 0.95825686403194,
+  "auc_qda": 0.9419292952727604,
+  "auc_probe": 0.9665539524962017,
+  "lw_lambda_pos": 0.0028798484709113836,
+  "lw_lambda_neg": 0.00032549441675655544,
+  "bench": false
+ },
+ {
+  "attr": "Young",
+  "n_pos_train": 126788,
+  "auc_lda": 0.934962958856505,
+  "auc_qda": 0.9135219456254975,
+  "auc_probe": 0.9382118187787966,
+  "lw_lambda_pos": 0.00037553400034084916,
+  "lw_lambda_neg": 0.0012842698488384485,
+  "bench": true
+ }
+]

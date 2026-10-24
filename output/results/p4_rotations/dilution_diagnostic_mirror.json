@@ -1,0 +1,236 @@
+[
+ {
+  "method": "B3",
+  "query": "+Smiling",
+  "k": 1,
+  "ratio": 1.0,
+  "move_alone": 0.908149242401123,
+  "move_full": 0.908149242401123,
+  "angle_deg": 62.23322677612305
+ },
+ {
+  "method": "B3",
+  "query": "+Eyeglasses",
+  "k": 1,
+  "ratio": 1.0,
+  "move_alone": 0.911950945854187,
+  "move_full": 0.911950945854187,
+  "angle_deg": 62.424041748046875
+ },
+ {
+  "method": "B3",
+  "query": "-Heavy_Makeup",
+  "k": 1,
+  "ratio": 1.0,
+  "move_alone": 0.7007788419723511,
+  "move_full": 0.7007788419723511,
+  "angle_deg": 44.72308349609375
+ },
+ {
+  "method": "B3",
+  "query": "+Male",
+  "k": 1,
+  "ratio": 1.0,
+  "move_alone": 1.0028680562973022,
+  "move_full": 1.0028680562973022,
+  "angle_deg": 67.03760528564453
+ },
+ {
+  "method": "B3",
+  "query": "-Young",
+  "k": 1,
+  "ratio": 1.0,
+  "move_alone": 0.7524744868278503,
+  "move_full": 0.7524744868278503,
+  "angle_deg": 47.04008102416992
+ },
+ {
+  "method": "B3",
+  "query": "+Blond_Hair",
+  "k": 1,
+  "ratio": 1.0,
+  "move_alone": 0.8724402189254761,
+  "move_full": 0.8724402189254761,
+  "angle_deg": 60.46940612792969
+ },
+ {
+  "method": "B3",
+  "query": "+Mustache",
+  "k": 1,
+  "ratio": 1.0,
+  "move_alone": 0.9009718894958496,
+  "move_full": 0.9009718894958496,
+  "angle_deg": 61.879974365234375
+ },
+ {
+  "method": "B3",
+  "query": "+Eyeglasses, +Smiling",
+  "k": 2,
+  "ratio": 0.8431004888182354,
+  "move_alone": 0.9133704900741577,
+  "move_full": 0.7700615227222443,
+  "angle_deg": 73.01602172851562
+ },
+ {
+  "method": "B3",
+  "query": "+Black_Hair, -Wavy_Hair",
+  "k": 2,
+  "ratio": 0.5210818724572494,
+  "move_alone": 0.8062518537044525,
+  "move_full": 0.4425167292356491,
+  "angle_deg": 59.87763595581055
+ },
+ {
+  "method": "B3",
+  "query": "-Male, -Mustache",
+  "k": 2,
+  "ratio": 0.9083047775916822,
+  "move_alone": 0.7191992402076721,
+  "move_full": 0.6532508134841919,
+  "angle_deg": 57.74697494506836
+ },
+ {
+  "method": "B3",
+  "query": "+Chubby, -Young",
+  "k": 2,
+  "ratio": 0.7928094032852291,
+  "move_alone": 0.8237264752388,
+  "move_full": 0.6625471115112305,
+  "angle_deg": 66.7616958618164
+ },
+ {
+  "method": "B3",
+  "query": "-Smiling, +Eyeglasses, +Wearing_Hat",
+  "k": 3,
+  "ratio": 0.5784765852600879,
+  "move_alone": 0.8428933620452881,
+  "move_full": 0.5147113651037216,
+  "angle_deg": 72.3662338256836
+ },
+ {
+  "method": "B3",
+  "query": "+Wearing_Lipstick, -Heavy_Makeup, +Smiling",
+  "k": 3,
+  "ratio": 0.4515757459041337,
+  "move_alone": 0.8381608327229818,
+  "move_full": 0.42335064709186554,
+  "angle_deg": 70.16814422607422
+ },
+ {
+  "method": "DirectionFusion",
+  "query": "+Smiling",
+  "k": 1,
+  "ratio": 1.0,
+  "move_alone": 0.9357688426971436,
+  "move_full": 0.9357688426971436,
+  "angle_deg": 61.937461853027344
+ },
+ {
+  "method": "DirectionFusion",
+  "query": "+Eyeglasses",
+  "k": 1,
+  "ratio": 1.0,
+  "move_alone": 1.066227912902832,
+  "move_full": 1.066227912902832,
+  "angle_deg": 74.2816162109375
+ },
+ {
+  "method": "DirectionFusion",
+  "query": "-Heavy_Makeup",
+  "k": 1,
+  "ratio": 1.0,
+  "move_alone": 0.797666072845459,
+  "move_full": 0.797666072845459,
+  "angle_deg": 55.057254791259766
+ },
+ {
+  "method": "DirectionFusion",
+  "query": "+Male",
+  "k": 1,
+  "ratio": 1.0,
+  "move_alone": 1.0857555866241455,
+  "move_full": 1.0857555866241455,
+  "angle_deg": 73.11361694335938
+ },
+ {
+  "method": "DirectionFusion",
+  "query": "-Young",
+  "k": 1,
+  "ratio": 1.0,
+  "move_alone": 0.940423309803009,
+  "move_full": 0.940423309803009,
+  "angle_deg": 61.57637405395508
+ },
+ {
+  "method": "DirectionFusion",
+  "query": "+Blond_Hair",
+  "k": 1,
+  "ratio": 1.0,
+  "move_alone": 0.9832200407981873,
+  "move_full": 0.9832200407981873,
+  "angle_deg": 68.07316589355469
+ },
+ {
+  "method": "DirectionFusion",
+  "query": "+Mustache",
+  "k": 1,
+  "ratio": 1.0,
+  "move_alone": 0.9235005974769592,
+  "move_full": 0.9235005974769592,
+  "angle_deg": 64.26318359375
+ },
+ {
+  "method": "DirectionFusion",
+  "query": "+Eyeglasses, +Smiling",
+  "k": 2,
+  "ratio": 0.7976001251445257,
+  "move_alone": 0.9971392154693604,
+  "move_full": 0.800896942615509,
+  "angle_deg": 80.26600646972656
+ },
+ {
+  "method": "DirectionFusion",
+  "query": "+Black_Hair, -Wavy_Hair",
+  "k": 2,
+  "ratio": 0.7497134085540176,
+  "move_alone": 0.9121410548686981,
+  "move_full": 0.693948358297348,
+  "angle_deg": 72.35447692871094
+ },
+ {
+  "method": "DirectionFusion",
+  "query": "-Male, -Mustache",
+  "k": 2,
+  "ratio": 0.6645581508169288,
+  "move_alone": 0.9136548340320587,
+  "move_full": 0.6118563711643219,
+  "angle_deg": 69.95884704589844
+ },
+ {
+  "method": "DirectionFusion",
+  "query": "+Chubby, -Young",
+  "k": 2,
+  "ratio": 0.8414428654903163,
+  "move_alone": 0.9402940273284912,
+  "move_full": 0.7918598353862762,
+  "angle_deg": 74.81455993652344
+ },
+ {
+  "method": "DirectionFusion",
+  "query": "-Smiling, +Eyeglasses, +Wearing_Hat",
+  "k": 3,
+  "ratio": 0.6877133913667892,
+  "move_alone": 1.035658359527588,
+  "move_full": 0.7207810282707214,
+  "angle_deg": 90.25225067138672
+ },
+ {
+  "method": "DirectionFusion",
+  "query": "+Wearing_Lipstick, -Heavy_Makeup, +Smiling",
+  "k": 3,
+  "ratio": 0.683931404598563,
+  "move_alone": 0.866909126440684,
+  "move_full": 0.5915769338607788,
+  "angle_deg": 73.05982208251953
+ }
+]

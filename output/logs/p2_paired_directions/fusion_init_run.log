@@ -1,0 +1,87 @@
+mirror rigenerato e verificato: 13 query
+init text: (alpha, beta) = (1.75, 1.0)
+init paired: (alpha, beta) = (0.75, 0.5)
+--- text_s3000_lr0.0001 ---
+  step     1  loss 5.9122  tau 0.070  (0.0 min)
+  step   500  loss 5.5916  tau 0.067  (0.6 min)
+  step  1000  loss 5.5153  tau 0.064  (1.2 min)
+  step  1500  loss 5.4451  tau 0.062  (1.8 min)
+  step  2000  loss 5.4939  tau 0.060  (2.4 min)
+  step  2500  loss 5.2898  tau 0.059  (3.1 min)
+  step  3000  loss 5.2840  tau 0.057  (3.8 min)
+[text_s3000_lr0.0001] mirror macro R@10 0.280
+--- text_s3000_lr0.0003 ---
+  step     1  loss 5.9122  tau 0.070  (0.0 min)
+  step   500  loss 5.4167  tau 0.062  (0.7 min)
+  step  1000  loss 5.3639  tau 0.057  (1.4 min)
+  step  1500  loss 5.2646  tau 0.055  (1.9 min)
+  step  2000  loss 5.4300  tau 0.053  (2.5 min)
+  step  2500  loss 5.1669  tau 0.052  (3.0 min)
+  step  3000  loss 5.1575  tau 0.051  (3.6 min)
+[text_s3000_lr0.0003] mirror macro R@10 0.296
+--- text_s3000_lr0.001 ---
+  step     1  loss 5.9122  tau 0.070  (0.0 min)
+  step   500  loss 5.2506  tau 0.054  (0.6 min)
+  step  1000  loss 5.2630  tau 0.050  (1.1 min)
+  step  1500  loss 5.1867  tau 0.048  (1.8 min)
+  step  2000  loss 5.3998  tau 0.045  (2.4 min)
+  step  2500  loss 5.1064  tau 0.044  (3.0 min)
+  step  3000  loss 5.0898  tau 0.042  (3.6 min)
+[text_s3000_lr0.001] mirror macro R@10 0.296
+--- paired_s3000_lr0.0001 ---
+  step     1  loss 5.8054  tau 0.070  (0.0 min)
+  step   500  loss 5.4826  tau 0.073  (0.6 min)
+  step  1000  loss 5.5039  tau 0.074  (1.2 min)
+  step  1500  loss 5.4236  tau 0.075  (1.9 min)
+  step  2000  loss 5.5155  tau 0.075  (2.5 min)
+  step  2500  loss 5.2519  tau 0.074  (3.1 min)
+  step  3000  loss 5.2020  tau 0.073  (3.7 min)
+[paired_s3000_lr0.0001] mirror macro R@10 0.288
+--- paired_s3000_lr0.0003 ---
+  step     1  loss 5.8054  tau 0.070  (0.0 min)
+  step   500  loss 5.3598  tau 0.075  (0.6 min)
+  step  1000  loss 5.3846  tau 0.073  (1.2 min)
+  step  1500  loss 5.2795  tau 0.070  (1.9 min)
+  step  2000  loss 5.4416  tau 0.067  (2.5 min)
+  step  2500  loss 5.1781  tau 0.065  (3.1 min)
+  step  3000  loss 5.1221  tau 0.062  (3.6 min)
+[paired_s3000_lr0.0003] mirror macro R@10 0.296
+--- paired_s3000_lr0.001 ---
+  step     1  loss 5.8054  tau 0.070  (0.0 min)
+  step   500  loss 5.2673  tau 0.069  (0.5 min)
+  step  1000  loss 5.2928  tau 0.061  (1.1 min)
+  step  1500  loss 5.2007  tau 0.056  (1.7 min)
+  step  2000  loss 5.4071  tau 0.052  (2.3 min)
+  step  2500  loss 5.1189  tau 0.049  (2.8 min)
+  step  3000  loss 5.0766  tau 0.046  (3.4 min)
+[paired_s3000_lr0.001] mirror macro R@10 0.298
+
+    init       lr  mirror R@10
+    text   0.0001        0.280
+    text   0.0003        0.296
+    text    0.001        0.296
+  paired   0.0001        0.288
+  paired   0.0003        0.296
+  paired    0.001        0.298
+selezionato sul mirror per text: lr = 0.0003 (R@10 0.296)
+selezionato sul mirror per paired: lr = 0.001 (R@10 0.298)
+
+query                                           n_src    prev    text  paired   delta
++Smiling                                         5195   0.255   0.254   0.274  +0.020
++Eyeglasses                                      2615   0.502   0.502   0.487  -0.015
+-Heavy_Makeup                                    3980   0.201   0.201   0.193  -0.008  <- negativa
++Male                                            1952   0.355   0.354   0.380  +0.026
+-Young                                           5935   0.163   0.163   0.149  -0.013  <- negativa
++Blond_Hair                                      5847   0.341   0.341   0.330  -0.011
++Mustache                                         650   0.263   0.263   0.212  -0.051
++Eyeglasses, +Smiling                             708   0.427   0.429   0.422  -0.007
++Black_Hair, -Wavy_Hair                          2523   0.232   0.231   0.252  +0.021  <- negativa
+-Male, -Mustache                                   35   0.171   0.171   0.200  +0.029  <- negativa
++Chubby, -Young                                   481   0.146   0.146   0.204  +0.058  <- negativa
+-Smiling, +Eyeglasses, +Wearing_Hat                82   0.793   0.793   0.768  -0.024  <- negativa
++Wearing_Lipstick, -Heavy_Makeup, +Smiling         35   0.000   0.000   0.000  +0.000  <- negativa
+MACRO                                                   0.296   0.296   0.298  +0.002
+solo query con negazioni                                0.244   0.252  +0.009
+solo negative-dominanti                                 0.178   0.181  +0.002
+
+salvato fusion_init_ablation_mirror.json

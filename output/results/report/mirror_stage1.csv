@@ -1,0 +1,6 @@
+model,lr,mirror_R@10,note
+ScalarFusion (8a pipeline check),,0.202,"learned a=1.658 b=0.995, 1000 steps"
+DirectionFusion,0.0001,0.285,
+DirectionFusion,0.0003,0.287,
+DirectionFusion,0.001,0.314,
+GatedFusion,0.001,0.324,

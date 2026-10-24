@@ -1,0 +1,27 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+embeddings: torch.Size([202599, 512]), split su cuda
+mirror: 13 query uniche
+mirror identico a quello dell'esperimento veto (n_src per query)
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 12788.88it/s]
+direzioni testuali selezionate: [('delta-ant', 21), ('delta-base', 15), ('raw', 4)]
+direzioni appaiate h=0: coppie min 5244 (Double_Chin), max 410300
+text    (alpha*, beta*) = (1.75, 1.0)  macro R@10 mirror = 0.203
+b5      (alpha*, beta*) = (0.75, 0.25)  macro R@10 mirror = 0.156
+paired  (alpha*, beta*) = (0.75, 0.5)  macro R@10 mirror = 0.257
+
+query                                           n_src    text      B5  paired
++Smiling                                         5195   0.200   0.158   0.212
++Eyeglasses                                      2615   0.359   0.216   0.400
+-Heavy_Makeup                                    3980   0.166   0.157   0.204  <- negativa
++Male                                            1952   0.210   0.221   0.239
+-Young                                           5935   0.091   0.084   0.131  <- negativa
++Blond_Hair                                      5847   0.304   0.258   0.274
++Mustache                                         650   0.200   0.209   0.272
++Eyeglasses, +Smiling                             708   0.353   0.203   0.273
++Black_Hair, -Wavy_Hair                          2523   0.264   0.052   0.201  <- negativa
+-Male, -Mustache                                   35   0.057   0.029   0.086  <- negativa
++Chubby, -Young                                   481   0.056   0.052   0.133  <- negativa
+-Smiling, +Eyeglasses, +Wearing_Hat                82   0.354   0.354   0.854  <- negativa
++Wearing_Lipstick, -Heavy_Makeup, +Smiling         35   0.029   0.029   0.057  <- negativa
+
+salvati b3_direction_ablation_mirror.json e directions_all_sets.pt

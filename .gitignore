@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# CelebA is not redistributed: images, annotations and archives stay local
+data/celeba/
+img_align_celeba/
+*.zip
+
+# Feature caches and checkpoints: only the two files in checkpoints/ are tracked
+*.npz
+*.npy
+*.pt
+*.pth
+!checkpoints/fusion_text_s3000_lr0.0003.pt
+!checkpoints/directions_all_sets.pt
+
+# Secrets
+.env
+*.env
+kaggle.json
+
+# OS and editors
+.DS_Store
+*:Zone.Identifier
+.vscode/
+.idea/
+.claude/
+.serena/

@@ -1,0 +1,104 @@
+mirror rigenerato e verificato: 13 query
+  A +Smiling                                     (0s)
+  A +Eyeglasses                                  (0s)
+  A -Heavy_Makeup                                (0s)
+  A +Male                                        (0s)
+  A -Young                                       (0s)
+  A +Blond_Hair                                  (1s)
+  A +Mustache                                    (1s)
+  A +Eyeglasses, +Smiling                        (1s)
+  A +Black_Hair, -Wavy_Hair                      (1s)
+  A -Male, -Mustache                             (1s)
+  A +Chubby, -Young                              (1s)
+  A -Smiling, +Eyeglasses, +Wearing_Hat          (1s)
+  A +Wearing_Lipstick, -Heavy_Makeup, +Smiling   (1s)
+
+=== PARTE A — autopsia (macro su 13 query) ===
+copertura GT del base: R@10 0.296  R@50 0.593  R@100 0.719  R@200 0.840
+tetto assoluto di ogni re-rank in-M: R@M_cov (sopra)
+  base (R@10)                        0.296  (+0.000)
+  veto oracolo   in top-200          0.323  (+0.027)
+  veto oracolo   gallery piena       0.323  (+0.027)
+  oracolo congiuntivo in top-200     0.357  (+0.061)
+  oracolo congiuntivo gallery piena  0.358  (+0.062)
+
+per-query (base | oveto M/F | osat M/F | R@200cov):
+  +Smiling                                     0.254 | 0.254/0.254 | 0.266/0.266 | 0.765
+  +Eyeglasses                                  0.502 | 0.502/0.502 | 0.509/0.507 | 0.974
+  -Heavy_Makeup                                0.201 | 0.250/0.250 | 0.250/0.253 | 0.770
+  +Male                                        0.354 | 0.354/0.354 | 0.355/0.355 | 0.868
+  -Young                                       0.163 | 0.228/0.228 | 0.228/0.228 | 0.738
+  +Blond_Hair                                  0.341 | 0.341/0.341 | 0.357/0.358 | 0.875
+  +Mustache                                    0.263 | 0.263/0.263 | 0.346/0.349 | 0.855
+  +Eyeglasses, +Smiling                        0.429 | 0.429/0.429 | 0.469/0.468 | 0.996
+  +Black_Hair, -Wavy_Hair                      0.231 | 0.268/0.268 | 0.322/0.322 | 0.859
+  -Male, -Mustache                             0.171 | 0.314/0.314 | 0.314/0.343 | 0.800
+  +Chubby, -Young                              0.146 | 0.191/0.191 | 0.331/0.331 | 0.881
+  -Smiling, +Eyeglasses, +Wearing_Hat          0.793 | 0.805/0.805 | 0.866/0.854 | 1.000
+  +Wearing_Lipstick, -Heavy_Makeup, +Smiling   0.000 | 0.000/0.000 | 0.029/0.029 | 0.543
+  B +Smiling                                     (3s)
+  B +Eyeglasses                                  (4s)
+  B -Heavy_Makeup                                (6s)
+  B +Male                                        (6s)
+  B -Young                                       (9s)
+  B +Blond_Hair                                  (11s)
+  B +Mustache                                    (12s)
+  B +Eyeglasses, +Smiling                        (12s)
+  B +Black_Hair, -Wavy_Hair                      (13s)
+  B -Male, -Mustache                             (13s)
+  B +Chubby, -Young                              (13s)
+  B -Smiling, +Eyeglasses, +Wearing_Hat          (13s)
+  B +Wearing_Lipstick, -Heavy_Makeup, +Smiling   (13s)
+
+=== PARTE B — sonde su gallery piena ===
+ancora (w+=0, w-=0): 0.295995 vs base 0.295995
+punti griglia sopra il base: 1/128
+
+griglia macro R@10 (variante cal), righe w+, colonne w-:
+               0    0.01    0.02    0.05     0.1     0.2     0.5       1
+      0    0.296   0.295   0.292   0.277   0.252   0.233   0.209   0.198
+   0.01    0.288   0.291   0.289   0.272   0.243   0.224   0.205   0.195
+   0.02    0.282   0.278   0.273   0.259   0.234   0.220   0.201   0.192
+   0.05    0.254   0.256   0.254   0.240   0.225   0.209   0.198   0.181
+    0.1    0.246   0.246   0.246   0.235   0.210   0.195   0.184   0.170
+    0.2    0.225   0.232   0.231   0.222   0.201   0.177   0.165   0.162
+    0.5    0.196   0.195   0.194   0.187   0.179   0.168   0.136   0.132
+      1    0.174   0.175   0.174   0.168   0.157   0.148   0.125   0.111
+
+griglia macro R@10 (variante znorm):
+               0    0.01    0.02    0.05     0.1     0.2     0.5       1
+      0    0.296   0.296   0.294   0.280   0.257   0.228   0.211   0.196
+   0.01    0.291   0.293   0.292   0.276   0.254   0.223   0.209   0.194
+   0.02    0.287   0.291   0.289   0.271   0.247   0.221   0.207   0.192
+   0.05    0.272   0.269   0.267   0.253   0.234   0.214   0.206   0.187
+    0.1    0.254   0.255   0.254   0.240   0.226   0.203   0.200   0.177
+    0.2    0.241   0.242   0.243   0.231   0.211   0.184   0.186   0.168
+    0.5    0.199   0.199   0.197   0.187   0.181   0.161   0.147   0.140
+      1    0.171   0.173   0.171   0.163   0.158   0.142   0.127   0.112
+
+scelto sul mirror: variante znorm, w+=0, w-=0.01 -> macro R@10 0.296 (+0.000)
+
+query                                           n_src    base   sonde    delta
++Smiling                                         5195   0.254   0.254   +0.000
++Eyeglasses                                      2615   0.502   0.502   +0.000
+-Heavy_Makeup                                    3980   0.201   0.200   -0.001 NEG-DOM
++Male                                            1952   0.354   0.354   +0.000
+-Young                                           5935   0.163   0.163   -0.000 NEG-DOM
++Blond_Hair                                      5847   0.341   0.341   +0.000
++Mustache                                         650   0.263   0.263   +0.000
++Eyeglasses, +Smiling                             708   0.429   0.429   +0.000
++Black_Hair, -Wavy_Hair                          2523   0.231   0.232   +0.000 neg
+-Male, -Mustache                                   35   0.171   0.200   +0.029 NEG-DOM
++Chubby, -Young                                   481   0.146   0.148   +0.002 neg
+-Smiling, +Eyeglasses, +Wearing_Hat                82   0.793   0.768   -0.024 neg
++Wearing_Lipstick, -Heavy_Makeup, +Smiling         35   0.000   0.000   +0.000 neg
+MACRO (13 query)                                        0.296   0.296   +0.000
+solo query con negazioni                                0.244   0.244   +0.001
+solo negative-dominanti                                 0.178   0.188   +0.009
+
+metriche macro al punto scelto: R@1 0.040  R@5 0.199  R@10 0.296  P@1 0.040  P@5 0.049  P@10 0.044
+
+check meccanicistico — %violatori top-10 (negative-dominanti): base 25.5% -> sonde 22.7%
+
+VERDETTO parte B: delta +0.000 (< +0.010, rumore: non adottare)
+salvato autopsy_fullgallery_mirror.json (14s)

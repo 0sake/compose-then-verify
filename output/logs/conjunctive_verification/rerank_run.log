@@ -1,0 +1,73 @@
+mirror rigenerato e verificato: 13 query
+(0) riproduzione — mirror R@10 DirectionFusion: 0.296 (checkpoint dichiarava 0.296)
+
+AUC sonde (train->validation) sugli attributi del benchmark [regola: termine attivo solo se >= 0.75]:
+  Black_Hair           AUC 0.867
+  Blond_Hair           AUC 0.932
+  Chubby               AUC 0.916
+  Eyeglasses           AUC 0.927
+  Heavy_Makeup         AUC 0.944
+  Male                 AUC 0.999
+  Mustache             AUC 0.950
+  Smiling              AUC 0.881
+  Wavy_Hair            AUC 0.796
+  Wearing_Hat          AUC 0.916
+  Wearing_Lipstick     AUC 0.954
+  Young                AUC 0.912
+  media: 0.916
+  cache +Smiling                                     n_src   5195 (0s)
+  cache +Eyeglasses                                  n_src   2615 (0s)
+  cache -Heavy_Makeup                                n_src   3980 (0s)
+  cache +Male                                        n_src   1952 (0s)
+  cache -Young                                       n_src   5935 (1s)
+  cache +Blond_Hair                                  n_src   5847 (1s)
+  cache +Mustache                                    n_src    650 (1s)
+  cache +Eyeglasses, +Smiling                        n_src    708 (1s)
+  cache +Black_Hair, -Wavy_Hair                      n_src   2523 (1s)
+  cache -Male, -Mustache                             n_src     35 (1s)
+  cache +Chubby, -Young                              n_src    481 (1s)
+  cache -Smiling, +Eyeglasses, +Wearing_Hat          n_src     82 (1s)
+  cache +Wearing_Lipstick, -Heavy_Makeup, +Smiling   n_src     35 (1s)
+
+(1) ancora (w+=0, w-=0, M=200): 0.295995 vs base 0.295995
+griglia 'cal' completata (2s)
+griglia 'znorm' completata (3s)
+
+base mirror R@10: 0.296   [kill-test: morte se tutta la griglia <= base]
+punti griglia sopra il base: 3/294
+
+migliore per (variante, M):
+variante     M     w+     w-    R@10    delta
+     cal    50      0      0   0.296   -0.000
+     cal   100      0      0   0.296   -0.000
+     cal   200      0      0   0.296   -0.000
+   znorm    50      0   0.01   0.296   +0.000
+   znorm   100      0   0.01   0.296   +0.000
+   znorm   200      0   0.01   0.296   +0.000
+
+scelto sul mirror: variante znorm, M=50, w+=0, w-=0.01 -> macro R@10 0.296 (+0.000)
+
+query                                           n_src    base  rerank    delta
++Smiling                                         5195   0.254   0.254   -0.000
++Eyeglasses                                      2615   0.502   0.502   +0.000
+-Heavy_Makeup                                    3980   0.201   0.200   -0.001 NEG-DOM
++Male                                            1952   0.354   0.354   -0.000
+-Young                                           5935   0.163   0.163   -0.000 NEG-DOM
++Blond_Hair                                      5847   0.341   0.341   -0.000
++Mustache                                         650   0.263   0.263   +0.000
++Eyeglasses, +Smiling                             708   0.429   0.429   +0.000
++Black_Hair, -Wavy_Hair                          2523   0.231   0.232   +0.000 neg
+-Male, -Mustache                                   35   0.171   0.200   +0.029 NEG-DOM
++Chubby, -Young                                   481   0.146   0.148   +0.002 neg
+-Smiling, +Eyeglasses, +Wearing_Hat                82   0.793   0.768   -0.024 neg
++Wearing_Lipstick, -Heavy_Makeup, +Smiling         35   0.000   0.000   +0.000 neg
+MACRO (13 query)                                        0.296   0.296   +0.000
+solo query con negazioni                                0.244   0.244   +0.001
+solo negative-dominanti                                 0.178   0.188   +0.009
+
+metriche macro al punto scelto: R@1 0.040  P@1 0.040  R@5 0.199  P@5 0.049  R@10 0.296  P@10 0.044
+
+check meccanicistico — %violatori top-10 (negative-dominanti): base 25.5% -> rerank 22.7%   [deve scendere]
+
+VERDETTO: VIVA: delta +0.000 (< +0.010, rumore: non adottare)
+salvato rerank_conjunctive_mirror.json (3s)

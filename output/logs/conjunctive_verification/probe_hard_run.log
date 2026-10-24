@@ -1,0 +1,76 @@
+mirror rigenerato e verificato: 13 query
+training sonde logistiche (12 attributi benchmark):
+  Black_Hair           AUC val: meandiff 0.867  logistic 0.933  (4s)
+  Blond_Hair           AUC val: meandiff 0.932  logistic 0.974  (5s)
+  Chubby               AUC val: meandiff 0.916  logistic 0.950  (6s)
+  Eyeglasses           AUC val: meandiff 0.927  logistic 0.997  (7s)
+  Heavy_Makeup         AUC val: meandiff 0.944  logistic 0.967  (8s)
+  Male                 AUC val: meandiff 0.999  logistic 0.999  (9s)
+  Mustache             AUC val: meandiff 0.950  logistic 0.972  (11s)
+  Smiling              AUC val: meandiff 0.881  logistic 0.972  (12s)
+  Wavy_Hair            AUC val: meandiff 0.796  logistic 0.902  (13s)
+  Wearing_Hat          AUC val: meandiff 0.916  logistic 0.994  (14s)
+  Wearing_Lipstick     AUC val: meandiff 0.954  logistic 0.976  (15s)
+  Young                AUC val: meandiff 0.912  logistic 0.937  (16s)
+  media: meandiff 0.916  logistic 0.964
+
+diagnosi P_C — AUC sull'attributo negato: globale vs pool top-200 del base (query con negazioni):
+query                                          attr               glob md/lg   pool md/lg %viol pool
+-Heavy_Makeup                                  Heavy_Makeup     0.944/0.967  0.783/0.865      60.1%
+-Young                                         Young            0.912/0.937  0.828/0.891      55.6%
++Black_Hair, -Wavy_Hair                        Wavy_Hair        0.796/0.902  0.738/0.875      20.2%
+-Male, -Mustache                               Male             0.999/0.999  0.983/0.987      52.1%
+-Male, -Mustache                               Mustache         0.950/0.972  0.914/0.936       8.6%
++Chubby, -Young                                Young            0.912/0.937  0.805/0.894      32.4%
+-Smiling, +Eyeglasses, +Wearing_Hat            Smiling          0.881/0.972  0.838/0.940      14.2%
++Wearing_Lipstick, -Heavy_Makeup, +Smiling     Heavy_Makeup     0.944/0.967  0.672/0.761      38.0%
+  abl +Smiling                                     (17s)
+  abl +Eyeglasses                                  (17s)
+  abl -Heavy_Makeup                                (17s)
+  abl +Male                                        (18s)
+  abl -Young                                       (18s)
+  abl +Blond_Hair                                  (18s)
+  abl +Mustache                                    (18s)
+  abl +Eyeglasses, +Smiling                        (18s)
+  abl +Black_Hair, -Wavy_Hair                      (18s)
+  abl -Male, -Mustache                             (18s)
+  abl +Chubby, -Young                              (19s)
+  abl -Smiling, +Eyeglasses, +Wearing_Hat          (19s)
+  abl +Wearing_Lipstick, -Heavy_Makeup, +Smiling   (19s)
+
+base mirror R@10 (riferimento): 0.296
+
+macro R@10 per configurazione (base 0.296):
+    sonda    tau    veto   bonus
+ meandiff   -0.5   0.266   0.250
+ meandiff  -0.25   0.286   0.267
+ meandiff      0   0.281   0.239
+ meandiff   0.25   0.283   0.241
+ meandiff    0.5   0.294   0.245
+ logistic     -2   0.252   0.252
+ logistic     -1   0.294   0.295
+ logistic      0   0.303   0.282
+ logistic      1   0.305   0.246
+ logistic      2   0.306   0.257
+
+punti sopra il base: 3/20
+scelto sul mirror: veto con sonda logistic, tau=2 -> macro R@10 0.306 (+0.010)
+
+query                                             base    best    delta   [oracolo: veto 0.323, congiuntivo 0.357]
++Smiling                                         0.255   0.254   -0.001
++Eyeglasses                                      0.502   0.502   -0.000
+-Heavy_Makeup                                    0.201   0.202   +0.001 NEG-DOM
++Male                                            0.355   0.354   -0.001
+-Young                                           0.163   0.163   -0.001 NEG-DOM
++Blond_Hair                                      0.341   0.341   -0.000
++Mustache                                        0.263   0.263   +0.000
++Eyeglasses, +Smiling                            0.427   0.429   +0.003
++Black_Hair, -Wavy_Hair                          0.232   0.231   -0.000 neg
+-Male, -Mustache                                 0.171   0.314   +0.143 NEG-DOM
++Chubby, -Young                                  0.146   0.146   +0.000 neg
+-Smiling, +Eyeglasses, +Wearing_Hat              0.793   0.780   -0.012 neg
++Wearing_Lipstick, -Heavy_Makeup, +Smiling       0.000   0.000   +0.000 neg
+MACRO (13 query)                                 0.296   0.306   +0.010
+
+VERDETTO: delta +0.010 (>= +0.010, ADOTTABILE)
+salvato probe_hard_forms_mirror.json (19s)

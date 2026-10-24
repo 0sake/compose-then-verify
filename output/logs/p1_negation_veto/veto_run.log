@@ -1,0 +1,63 @@
+sonde attive nel veto: 36/40 (escluse: ['Bags_Under_Eyes', 'Big_Lips', 'Oval_Face', 'Pointy_Nose'])
+riferimento congelato — mirror R@10 DirectionFusion: 0.296
+
+--- veto, 3000 passi, lr 0.003 ---
+  step     1  loss 5.4884  tau 0.070
+  step   500  loss 5.1910  tau 0.051
+  step  1000  loss 5.2620  tau 0.051
+  step  1500  loss 5.1883  tau 0.051
+  step  2000  loss 5.4297  tau 0.050
+  step  2500  loss 5.1450  tau 0.050
+  step  3000  loss 5.1524  tau 0.049
+  mirror R@10 con veto: 0.304  (base 0.296)
+
+--- veto, 3000 passi, lr 0.01 ---
+  step     1  loss 5.4884  tau 0.069
+  step   500  loss 5.1920  tau 0.051
+  step  1000  loss 5.2616  tau 0.051
+  step  1500  loss 5.1876  tau 0.052
+  step  2000  loss 5.4260  tau 0.050
+  step  2500  loss 5.1374  tau 0.050
+  step  3000  loss 5.1517  tau 0.049
+  mirror R@10 con veto: 0.307  (base 0.296)
+
+--- veto, 3000 passi, lr 0.03 ---
+  step     1  loss 5.4884  tau 0.068
+  step   500  loss 5.1826  tau 0.049
+  step  1000  loss 5.2585  tau 0.051
+  step  1500  loss 5.1881  tau 0.051
+  step  2000  loss 5.4224  tau 0.050
+  step  2500  loss 5.1270  tau 0.050
+  step  3000  loss 5.1539  tau 0.049
+  mirror R@10 con veto: 0.298  (base 0.296)
+
+=== sweep: {0.003: 0.304, 0.01: 0.307, 0.03: 0.298} -> lr scelto sul mirror: 0.01
+
+query                                         n_src    base    veto   delta
++Smiling                                       5195   0.255   0.255  +0.000
++Eyeglasses                                    2615   0.502   0.502  +0.000
+-Heavy_Makeup                                  3980   0.201   0.201  +0.000 NEG-DOM
++Male                                          1952   0.355   0.355  +0.000
+-Young                                         5935   0.163   0.163  -0.001 NEG-DOM
++Blond_Hair                                    5847   0.341   0.341  +0.000
++Mustache                                       650   0.263   0.263  +0.000
++Eyeglasses, +Smiling                           708   0.427   0.427  +0.000
++Black_Hair, -Wavy_Hair                        2523   0.232   0.229  -0.003 neg
+-Male, -Mustache                                 35   0.171   0.314  +0.143 NEG-DOM
++Chubby, -Young                                 481   0.146   0.146  +0.000 neg
+-Smiling, +Eyeglasses, +Wearing_Hat              82   0.793   0.793  +0.000 neg
++Wearing_Lipstick, -Heavy_Makeup, +Smiling       35   0.000   0.000  +0.000 neg
+MACRO (13 query)                                      0.296   0.307  +0.011
+solo query con negazioni                              0.244   0.264  +0.020
+solo negative-dominanti                               0.179   0.226  +0.048
+
+parametri appresi (attributi negati del benchmark):
+attributo              lambda    kappa      tau
+Heavy_Makeup           -0.004    0.244    1.539
+Male                    0.157    6.533    1.112
+Mustache               -0.044    0.447    0.933
+Smiling                 0.083    3.169    2.302
+Wavy_Hair              -0.014    0.399    1.976
+Young                   0.021    1.287    2.382
+
+salvati veto_s3000_lr0.01.pt e veto_ablation_mirror.json

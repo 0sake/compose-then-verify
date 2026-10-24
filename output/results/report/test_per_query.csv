@@ -1,0 +1,46 @@
+system,entry,query,R@1,R@5,R@10,P@1,P@5,P@10
+Full system (+ predicate re-rank),0,+Smiling,0.111,0.315,0.431,0.111,0.088,0.074
+Full system (+ predicate re-rank),1,+Eyeglasses,0.265,0.575,0.716,0.265,0.209,0.179
+Full system (+ predicate re-rank),2,-Heavy_Makeup,0.074,0.253,0.367,0.074,0.065,0.056
+Full system (+ predicate re-rank),3,+Male,0.197,0.445,0.564,0.197,0.172,0.151
+Full system (+ predicate re-rank),4,-Young,0.095,0.267,0.370,0.095,0.078,0.067
+Full system (+ predicate re-rank),5,+Blond_Hair,0.115,0.364,0.507,0.115,0.104,0.093
+Full system (+ predicate re-rank),6,+Mustache,0.140,0.445,0.615,0.140,0.123,0.097
+Full system (+ predicate re-rank),7,-Young,0.095,0.267,0.370,0.095,0.078,0.067
+Full system (+ predicate re-rank),8,"+Eyeglasses, +Smiling",0.196,0.554,0.745,0.196,0.196,0.184
+Full system (+ predicate re-rank),9,"+Black_Hair, -Wavy_Hair",0.125,0.353,0.489,0.125,0.092,0.079
+Full system (+ predicate re-rank),10,"-Male, -Mustache",0.074,0.296,0.481,0.074,0.081,0.085
+Full system (+ predicate re-rank),11,"+Chubby, -Young",0.368,0.695,0.767,0.368,0.180,0.111
+Full system (+ predicate re-rank),12,"-Smiling, +Eyeglasses, +Wearing_Hat",0.266,0.671,0.924,0.266,0.248,0.232
+Full system (+ predicate re-rank),13,"+Wearing_Lipstick, -Heavy_Makeup, +Smiling",0.059,0.176,0.206,0.059,0.041,0.026
+Full system (+ predicate re-rank),macro,Macro Avg.,0.156,0.405,0.540,0.156,0.125,0.107
+Stage 1 (learned directions),0,+Smiling,0.068,0.185,0.256,0.068,0.049,0.040
+Stage 1 (learned directions),1,+Eyeglasses,0.099,0.315,0.472,0.099,0.083,0.076
+Stage 1 (learned directions),2,-Heavy_Makeup,0.028,0.102,0.160,0.028,0.023,0.020
+Stage 1 (learned directions),3,+Male,0.064,0.199,0.297,0.064,0.057,0.052
+Stage 1 (learned directions),4,-Young,0.025,0.095,0.151,0.025,0.022,0.021
+Stage 1 (learned directions),5,+Blond_Hair,0.047,0.179,0.267,0.047,0.045,0.041
+Stage 1 (learned directions),6,+Mustache,0.066,0.256,0.379,0.066,0.058,0.049
+Stage 1 (learned directions),7,-Young,0.025,0.095,0.151,0.025,0.022,0.021
+Stage 1 (learned directions),8,"+Eyeglasses, +Smiling",0.152,0.438,0.603,0.152,0.118,0.098
+Stage 1 (learned directions),9,"+Black_Hair, -Wavy_Hair",0.035,0.138,0.228,0.035,0.032,0.029
+Stage 1 (learned directions),10,"-Male, -Mustache",0.074,0.111,0.222,0.074,0.022,0.022
+Stage 1 (learned directions),11,"+Chubby, -Young",0.043,0.284,0.485,0.043,0.058,0.051
+Stage 1 (learned directions),12,"-Smiling, +Eyeglasses, +Wearing_Hat",0.278,0.405,0.519,0.278,0.185,0.128
+Stage 1 (learned directions),13,"+Wearing_Lipstick, -Heavy_Makeup, +Smiling",0.000,0.000,0.059,0.000,0.000,0.006
+Stage 1 (learned directions),macro,Macro Avg.,0.072,0.200,0.303,0.072,0.055,0.047
+B3 (tuned delta arithmetic),0,+Smiling,0.046,0.137,0.196,0.046,0.035,0.029
+B3 (tuned delta arithmetic),1,+Eyeglasses,0.081,0.223,0.333,0.081,0.054,0.046
+B3 (tuned delta arithmetic),2,-Heavy_Makeup,0.033,0.101,0.156,0.033,0.023,0.020
+B3 (tuned delta arithmetic),3,+Male,0.051,0.171,0.251,0.051,0.047,0.042
+B3 (tuned delta arithmetic),4,-Young,0.011,0.038,0.065,0.011,0.009,0.009
+B3 (tuned delta arithmetic),5,+Blond_Hair,0.039,0.132,0.203,0.039,0.033,0.029
+B3 (tuned delta arithmetic),6,+Mustache,0.060,0.196,0.316,0.060,0.048,0.041
+B3 (tuned delta arithmetic),7,-Young,0.011,0.038,0.065,0.011,0.009,0.009
+B3 (tuned delta arithmetic),8,"+Eyeglasses, +Smiling",0.041,0.149,0.230,0.041,0.033,0.028
+B3 (tuned delta arithmetic),9,"+Black_Hair, -Wavy_Hair",0.035,0.122,0.192,0.035,0.029,0.025
+B3 (tuned delta arithmetic),10,"-Male, -Mustache",0.000,0.037,0.074,0.000,0.007,0.011
+B3 (tuned delta arithmetic),11,"+Chubby, -Young",0.009,0.041,0.072,0.009,0.010,0.009
+B3 (tuned delta arithmetic),12,"-Smiling, +Eyeglasses, +Wearing_Hat",0.253,0.608,0.696,0.253,0.170,0.130
+B3 (tuned delta arithmetic),13,"+Wearing_Lipstick, -Heavy_Makeup, +Smiling",0.029,0.029,0.059,0.029,0.006,0.009
+B3 (tuned delta arithmetic),macro,Macro Avg.,0.050,0.145,0.208,0.050,0.037,0.031
